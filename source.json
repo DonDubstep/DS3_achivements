@@ -1,26 +1,38 @@
 [
     {
+        "id": 0,
         "title": "Зажечь первое пламя",
-        "description": "Зажгите первое пламя"
+        "description": "Зажгите первое пламя",
+        "status": "done"
     },
     {
+        "id": 1,
         "title": "Титл1",
-        "description": "Деск1"
+        "description": "Деск1",
+        "status": "not done"
     },
     {
+        "id": 2,
         "title": "Титл2",
-        "description": "Деск2"
+        "description": "Деск2",
+        "status": "not done"
     },
     {
+        "id": 3,
         "title": "Титл2",
-        "description": "Деск2"
+        "description": "Деск2",
+        "status": "not done"
     },
     {
+        "id": 4,
         "title": "Титл2",
-        "description": "Деск2"
+        "description": "Деск2",
+        "status": "not done"
     },
     {
+        "id": 5,
         "title": "Титл2",
-        "description": "Деск2"
+        "description": "Деск2",
+        "status": "not done"
     }
 ]

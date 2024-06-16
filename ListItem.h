@@ -17,8 +17,9 @@ class ListItem : public QWidget, QRect
     Q_OBJECT
 public:
     explicit ListItem(QWidget *parent = nullptr);
-    void SetItem(QString title_str, QString description_str);
+    void SetItem(QString title_str, QString description_str, QString status);
 
+    // Чтение Json
     static QVector<QVector<QString>> LoadJsonData(QString path)
     {
         QVector<QVector<QString>> result;
@@ -40,6 +41,7 @@ public:
             QVector<QString> elem_of_vec;
             elem_of_vec.append(jsonObject["title"].toString());
             elem_of_vec.append(jsonObject["description"].toString());
+            elem_of_vec.append(jsonObject["status"].toString());
             result.append(elem_of_vec);
         }
         return result;

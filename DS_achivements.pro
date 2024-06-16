@@ -19,6 +19,7 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui
+OTHER_FILES += source.json
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -15,6 +15,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void setupList();
+    QVector<QVector<QString>> SortList(QVector<QVector<QString>> data_vector);
 
 private:
     Ui::MainWindow *ui;

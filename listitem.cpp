@@ -5,7 +5,8 @@ ListItem::ListItem(QWidget *parent)
 {
 }
 
-void ListItem::SetItem(QString title_str, QString description_str)
+// Создание элемента списка
+void ListItem::SetItem(QString title_str, QString description_str, QString status)
 {
     QLabel *title = new QLabel(title_str);
     title->setStyleSheet(
@@ -18,7 +19,19 @@ void ListItem::SetItem(QString title_str, QString description_str)
         "font: 10pt;"
         "Segoe UI;"
         );
-
+    if(status == "done")
+    {
+        description->setStyleSheet(
+            "font: 10pt;"
+            "Segoe UI;"
+            "color: red;"
+            );
+        title->setStyleSheet(
+            "font: 16pt;"
+            "Segoe UI;"
+            "color: red;"
+            );
+    }
     QCheckBox *checkbox = new QCheckBox();
     QVBoxLayout *textLayout = new QVBoxLayout();
     QHBoxLayout *mainLayout = new QHBoxLayout();
